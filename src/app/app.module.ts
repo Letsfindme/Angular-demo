@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; //important
 
 import { AppComponent } from './app.component';
+import { DailyLinkListComponent } from './daily-link-list/daily-link-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DailyLinkListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
